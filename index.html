@@ -1,31 +1,6 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>My Golf Tracker</title>
-<link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-</head>
-<body>
-<header><div><h1>My Golf Tracker</h1><p>Scores • Differentials • Money</p></div><button id="refresh" class="icon">↻</button></header>
-<main>
-<section class="summary">
-<div class="card"><span>Rounds</span><strong id="roundCount">—</strong></div>
-<div class="card"><span>Avg. Differential</span><strong id="avgDiff">—</strong></div>
-<div class="card money"><span>Money YTD</span><strong id="moneyYtd">—</strong></div>
-</section>
-<section class="panel add"><h2>Add Round</h2><form id="roundForm">
-<label>Date<input id="playedOn" type="date" required></label>
-<label>Score<input id="score" type="number" min="40" max="200" inputmode="numeric" required placeholder="84"></label>
-<label>Course<select id="course" required><option value="">Select course</option></select></label>
-<label>Tees<select id="tee" required disabled><option value="">Select tees</option></select></label>
-<div id="teeInfo" class="tee-info">Rating and slope will fill automatically.</div>
-<label>Money won / lost ($)<input id="money" type="number" step="0.01" inputmode="decimal" required placeholder="-40 or 50"></label>
-<button class="primary" type="submit">Save Round</button><div id="message" class="message"></div>
-</form></section>
-<section class="panel"><div class="section-head"><h2>Round History</h2><span id="lifetime"></span></div><div id="history" class="history"><p>Loading…</p></div></section>
-</main>
-<footer>My Golf Tracker</footer>
-<script src="app.js"></script>
-</body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#153f2d"><title>My Golf Tracker</title><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"></head><body>
+<header><div><h1>My Golf Tracker</h1><p>Scores • Differentials • Money</p></div><button id="refresh" class="icon">↻</button></header><main>
+<section class="summary"><div class="card"><span>Rounds</span><strong id="roundCount">—</strong></div><div class="card"><span>Avg. Differential</span><strong id="avgDiff">—</strong></div><div class="card money"><span>Money YTD</span><strong id="moneyYtd">—</strong></div></section>
+<section class="panel add"><h2>Add Round</h2><form id="roundForm"><label>Date<input id="playedOn" type="date" required></label><label>Score<input id="score" type="number" min="40" max="200" inputmode="numeric" required placeholder="84"></label><label>Course<select id="course" required><option value="">Select course</option></select></label><label>Tees<select id="tee" required disabled><option value="">Select tees</option></select></label><div id="teeInfo" class="tee-info">Rating and slope will fill automatically.</div><label>Money won / lost ($)<input id="money" type="number" step="0.01" inputmode="decimal" required placeholder="-40 or 50"></label><button class="primary" type="submit">Save Round</button><div id="message" class="message"></div></form></section>
+<section class="panel"><div class="section-head"><h2>Round History</h2><span id="lifetime"></span></div><div id="history" class="history"><p>Loading…</p></div></section></main><footer>My Golf Tracker</footer><script type="module" src="/app.js"></script></body></html>
