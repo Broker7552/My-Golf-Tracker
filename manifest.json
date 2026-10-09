@@ -1,1 +1,23 @@
-{"name":"My Golf Tracker","short_name":"Golf Tracker","start_url":"/","display":"standalone","background_color":"#f4f6f3","theme_color":"#153f2d","description":"Track golf scores, WHS differentials and money won or lost."}
+{
+  "name": "My Golf Tracker",
+  "short_name": "Golf Tracker",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f6f3",
+  "theme_color": "#153f2d",
+  "description": "Track golf scores, WHS differentials and money won or lost.",
+  "icons": [
+    {
+      "src": "icon-gt-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-gt-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
